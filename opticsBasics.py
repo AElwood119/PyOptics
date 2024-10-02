@@ -1,4 +1,4 @@
-# Sell's Law
+# This file contains basic optics functions
 
 
 def snells_Law(n1, n2, theta_i):
