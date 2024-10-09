@@ -1,5 +1,7 @@
 # This file contains basic optics functions
 
+import numpy as np
+
 
 def snells_Law(n1, n2, theta_i):
     """
@@ -36,3 +38,9 @@ def snells_Law(n1, n2, theta_i):
     Angle of refraction: 19.19 degrees
 
     """
+    theta_i = np.radians(theta_i)
+
+    # Calculate the angle of refraction
+    theta_r = np.arcsin((n1 / n2) * np.sin(theta_i))
+
+    return np.degrees(theta_r)
