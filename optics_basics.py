@@ -1,17 +1,19 @@
-# This file contains basic optics functions
+"""This file contains basic Optics functions"""
 
 import numpy as np
 
 
-def snells_Law(n1, n2, theta_i):
+def snells_law(n1, n2, theta_i):
     """
     Calculate the angle of refraction based on Snell's Law.
 
-    Snell's Law describes how light refracts when it passes from one medium to another with a different refractive index.
+    Snell's Law describes how light refracts when it passes from one medium to another
+    with a different refractive index.
     The law is expressed as n1 * sin(theta1) = n2 * sin(theta2), where:
     - n1: Refractive index of the first medium (medium where light is coming from)
     - n2: Refractive index of the second medium (medium where light is entering)
-    - theta1: Angle of incidence in degrees (angle between the incident ray and the normal to the interface)
+    - theta1: Angle of incidence in degrees (angle between the incident ray and the
+    normal to the interface)
 
     Parameters:
     ----------
@@ -30,7 +32,8 @@ def snells_Law(n1, n2, theta_i):
     Raises:
     ------
     ValueError
-        If the calculated angle of refraction exceeds the bounds of the sine function (i.e., if sin(theta1) exceeds n2/n1).
+        If the calculated angle of refraction exceeds the bounds of the sine function1111
+        (i.e., if sin(theta1) exceeds n2/n1).
 
     Examples:
     --------
