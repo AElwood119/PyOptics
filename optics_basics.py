@@ -3,7 +3,7 @@
 import numpy as np
 
 
-def snells_law(n1, n2, theta_i):
+def snells_law(n1: float, n2: float, theta1: float):
     """
     Calculate the angle of refraction based on Snell's Law.
 
@@ -32,7 +32,7 @@ def snells_law(n1, n2, theta_i):
     Raises:
     ------
     ValueError
-        If the calculated angle of refraction exceeds the bounds of the sine function1111
+        If the calculated angle of refraction exceeds the bounds of the sine function
         (i.e., if sin(theta1) exceeds n2/n1).
 
     Examples:
@@ -41,9 +41,9 @@ def snells_law(n1, n2, theta_i):
     Angle of refraction: 19.19 degrees
 
     """
-    theta_i = np.radians(theta_i)
+    theta1 = np.radians(theta1)
 
     # Calculate the angle of refraction
-    theta_r = np.arcsin((n1 / n2) * np.sin(theta_i))
+    theta2 = np.arcsin((n1 / n2) * np.sin(theta1))
 
-    return np.degrees(theta_r)
+    return np.degrees(theta2)

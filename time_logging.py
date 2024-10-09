@@ -1,3 +1,5 @@
+"""Module allows logging of the time spent on this project through a GUI"""
+
 import csv
 from datetime import datetime
 import tkinter as tk
