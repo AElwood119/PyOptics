@@ -21,8 +21,8 @@ Through this project, I aim to:
 To get started with the project locally:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/pyoptics.git
-    cd pyoptics
+    git clone https://github.com/AElwood119/PyOptics.git
+    cd PyOptics
     ```
 2. Install dependencies (will be updated as the project progresses).
 
