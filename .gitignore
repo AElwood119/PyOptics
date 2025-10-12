@@ -8,4 +8,4 @@ test.py
 .venv
 *.out
 *.bib
-Documentation\
+Documentation/
