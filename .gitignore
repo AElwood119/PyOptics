@@ -8,4 +8,3 @@ test.py
 .venv
 *.out
 *.bib
-PyOptics/Documentation/
